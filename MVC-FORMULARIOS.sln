@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-FORMULARIOS", "MVC-FORMULARIOS\MVC-FORMULARIOS.csproj", "{0712FC8F-961E-44A5-8C46-F9923F3630FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0712FC8F-961E-44A5-8C46-F9923F3630FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0712FC8F-961E-44A5-8C46-F9923F3630FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0712FC8F-961E-44A5-8C46-F9923F3630FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0712FC8F-961E-44A5-8C46-F9923F3630FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB026143-EC20-45AB-85A3-F0F0FEE65A46}
+	EndGlobalSection
+EndGlobal

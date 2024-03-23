@@ -1,0 +1,116 @@
+﻿@model Usuario
+@{
+    ViewData["Title"] = "Crear Usuario";
+}
+
+<h1 class="text-black">HELPERS</h1>
+
+<form asp-action="Crear">
+    <div class="row">
+        <div class="form-group">
+            <div class="row d-flex align-items-center mb-3">
+                <div class="col-3">
+                    <label asp-for="NombreUusario" class="form-label"></label>
+                </div>
+                <div class="col-4">
+                    <input asp-for="NombreUusario" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row d-flex align-items-center mb-3">
+                <div class="col-3">
+                    <label asp-for="Password" class="form-label"></label>
+                </div>
+                <div class="col-4">
+                    <input asp-for="Password" class="form-control" type="password" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row align-items-center mb-3">
+                <label class="col-form-label col-3">Género</label>  <div class="col-6">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="Masculino" asp-for="Genero" value="Masculino" class="form-check-input" />
+                        <label class="form-check-label" for="Masculino">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="Femenino" asp-for="Genero" value="Femenino" class="form-check-input" />
+                        <label class="form-check-label" for="Femenino">Femenino</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row align-items-center mb-3">
+                <label class="col-form-label col-3" asp-for="Direccion"></label>
+                <div class="col-4">
+                    <textarea asp-for="Direccion" class="form-control" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row align-items-center mb-3">
+                <label class="col-form-label col-3">Pasatiempos</label>
+                <div class="col-4">
+                    <div class="form-check form-check-inline">
+                        <input asp-for="Pasatiempo" type="checkbox" id="Bailar" value="Bailar" class="form-check-input" />
+                        <label class="form-check-label" for="Bailar">Bailar</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" id="Correr" asp-for="Pasatiempo" value="Correr" class="form-check-input" />
+                        <label class="form-check-label" for="Correr">Correr</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" id="Escalar" asp-for="Pasatiempo" value="Escalar" class="form-check-input" />
+                        <label class="form-check-label" for="Escalar">Escalar</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" id="Peliculas" asp-for="Pasatiempo" value="Peliculas" class="form-check-input" />
+                        <label class="form-check-label" for="Peliculas">Películas</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row align-items-center mb-3">
+                <label class="col-form-label col-3" asp-for="Curso"></label>
+                <div class="col-4">
+                    <select asp-for="Curso" class="form-control">
+                        <option value="POO">POO</option>
+                        <option value="TW">Taller de Web</option>
+                        <option value="MAT3">Matemáticas 3</option>
+                        <option value="F1S1">Física 1 Semestre 1</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row align-items-center mb-3">
+                <label class="col-form-label col-3" asp-for="Conocimiento"></label>
+                <div class="col-4">
+                    <select asp-for="Conocimiento" class="form-control">
+                        <option value="C#">C#</option>
+                        <option value="ASP.NET">ASP.NET</option>
+                        <option value="ASP.NET CORE">ASP.NET CORE</option>
+                        <option value="Azure">Azure</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   <div class="row">
+       <div class="align-content-center">
+            <button class="btn btn-dark col-3">Enviar</button>
+       </div>
+   </div>
+
+</form>
